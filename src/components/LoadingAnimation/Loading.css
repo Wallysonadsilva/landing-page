@@ -1,8 +1,22 @@
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 9999;
+}
+
 .loader {
+  color: white;
   font-weight: bold;
   font-family: monospace;
   display: inline-grid;
-  font-size: 30px;
+  font-size: 1.3rem;
 }
 
 .loader:before,

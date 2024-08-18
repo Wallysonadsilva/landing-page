@@ -1,36 +1,105 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light;
-  color: black;
-
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 html,
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  background-color: black;
 }
 
 .content-container {
-  margin-right: 100px;
+  padding-top: 0;
   width: 100%;
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+}
+
+/* top navbar  start*/
+.navbar-top-hp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 45px;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navbar-top-hp ul {
+  display: flex;
+  width: auto;
+  width: 100%;
+}
+
+.navbar-top-hp li {
+  list-style: none;
+}
+
+.navbar-top-hp li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 15px;
+  color: white;
+  font-family: 'Neue Machina', sans-serif;
+  font-weight: bold;
+}
+
+
+.navbar-top-hp ul li:last-child {
+  margin-left: auto;
+}
+
+.lg-title {
+  font-family: 'Neue Machina', sans-serif;
+  padding-left: 40px;
+}
+
+.lg-title a {
+  text-decoration: none;
+  color: white;
+}
+
+/* top navbar  end*/
+
+/* Sections styling */
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+  width: 100%;
+  height: 100vh;
+  /* Full viewport height */
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Prevent content from overflowing */
+  background-color: black;
+}
+
+.arrowDown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes blink {
+  0% { opacity: 1;}
+  50% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+.chevronDown {
+  animation: blink 1.5s infinite;
+  color: white;
+  font-size: 2.5rem;
 }
 
 .navbar {
