@@ -449,6 +449,9 @@ body {
     margin-top: 4vh;
   }
 
+  .pj-4 .square-arrow{
+    margin-top: 1vh;
+  }
   /* Skills section */
   .skills-body {
     background-size: 23%;
