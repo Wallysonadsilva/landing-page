@@ -1,5 +1,6 @@
 import React from "react";
 import PerspectiveGrid from "../PerspectiveGrid";
+import skillImageCenter from "../../assets/skills-img.png";
 
 const Skills = () => {
   return (
@@ -8,7 +9,11 @@ const Skills = () => {
         <h1>Skills</h1>
       </div>
       <div className="perspective-grid">
-        <PerspectiveGrid />
+        <img
+          src={skillImageCenter}
+          alt="Skills Image"
+          className="skills-image"
+        />
       </div>
       <div className="skills-square">
         <div className="skills-square-text">

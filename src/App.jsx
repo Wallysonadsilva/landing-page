@@ -7,7 +7,7 @@ import HomePage from "./components/HomePage/HomePage";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Navbar from "./components/Navbar";
-import Contact from "./components/Interview/Contact";
+import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

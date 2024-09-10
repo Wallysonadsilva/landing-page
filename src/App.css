@@ -1,13 +1,14 @@
 @font-face {
-  font-family: 'Hanken Grotesk';
-  src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Neue Machina';
-  src: url('./assets/fonts/NeueMachina-Regular.otf') format('truetype');
+  font-family: "Neue Machina";
+  src: url("./assets/fonts/NeueMachina-Regular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -19,57 +20,70 @@
   text-align: center;
 }
 
-
 /* First-section content */
 
-.hp-content{
-  padding-top: 110px;
+.hp-content {
+  padding-top: 9vh;
+  background-image: url("/src/assets/home-bg-pattern.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top 15vh right;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .hp-text {
-  margin-top: 30px;
-  padding-left: 110px;
+  margin-top: 6vh;
+  padding-left: 8vw;
 }
 
 .hp-text h1 {
   color: white;
-  font-size: 90px;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 6vw;
+  font-family: "Hanken Grotesk", sans-serif;
   text-align: left;
-  line-height: 1;
-  word-spacing: -5px;
+  line-height: 1.1;
+  word-spacing: -0.5vw;
   margin: 0;
   padding: 0;
 }
 
-.hp-text h1+h1 {
-  margin-top: 70px;
+.hp-text h1 + h1 {
+  margin-top: 7vh;
 }
 
 .hp-social {
   display: flex;
   align-items: center;
   color: white;
-  margin: 50px 100px;
+  margin: 11vh 6vw;
 }
 
 .social-square-text {
   border: 2px solid white;
-  width: 500px;
-  height: 35px;
-  padding: 10px;
-  margin: 60px 5px;
+  width: 40vw;
+  height: 3vh;
+  padding: 1vw 2vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.social-square-text img {
+  width: 5.5vw;
+  height: 5.5vh;
+}
+
+.social-square-text,
+.social-square {
+  margin: 0.3vw;
+}
+
 .social-square {
   border: 2px solid white;
-  width: 500px;
-  height: 35px;
-  padding: 10px;
-  margin: 0 5px;
+  width: 40vw;
+  height: 3vh;
+  padding: 1vw 2vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,9 +91,8 @@
 
 .social-square .social-icon {
   display: flex;
-  border: 2px solid white;
   border-radius: 5px;
-  padding: 5px;
+  padding: 0.5vw 1.5vw;
   background-color: white;
   color: black;
   text-decoration: none;
@@ -88,19 +101,9 @@
 .social-icon span {
   margin-top: 4px;
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 0.5vw;
 }
 
-.social-square .fa-arrow-right-long {
-  font-size: 24px;
-}
-
-.social-square .social-icon {
-  margin-left: 30px;
-  width: 130px;
-  text-align: left;
-  padding-left: 10px;
-}
 
 .linked-icon,
 .github-icon {
@@ -109,18 +112,20 @@
   margin-left: auto;
 }
 
+
 /* About info section */
 .about-content {
-  padding-top: 110px;
-  position: relative;
+  padding-top: 10vh;
+  box-sizing: border-box;
 }
 
 .about-title {
-  font-size: 26px;
+  font-size: 2vw;
   color: white;
-  font-family: 'Neue Machina', sans-serif;
+  font-family: "Neue Machina", sans-serif;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 4vh;
 }
 
 .about-info {
@@ -128,20 +133,22 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto 4vh;
   color: white;
-  margin-bottom: 40px;
 }
 
 .about-info img {
-  width: 275px;
-  height: 370px;
-  margin-right: 30px;
+  width: 20%;
+  max-width: 350px;
+  height: auto;
+  margin-right: 2vw;
   flex-shrink: 0;
 }
 
 .about-info div {
-  max-width: 67vw;
-  height: 370px;
+  max-width: 65vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,32 +157,48 @@
 .about-info h2,
 p {
   text-align: justify;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .square-text {
   border: 2px solid white;
   color: white;
-  width: 300px;
-  height: 35px;
-  padding: 10px;
+  width: 20vw;
+  max-width: 300px;
+  height: 4vh;
+  padding: 1.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  left: 17%;
-  transform: translateX(-50%);
+  margin-left: 6vw;
+  align-self: self-start;
 }
 
 /* Project section */
 .project-section {
-  padding-top: 80px;
+  padding-top: 8vh;
   box-sizing: border-box;
 }
 
+.pj-1 img, .pj-2 img, .pj-4 img {
+  width: 50%;
+  height: auto;
+  aspect-ratio: 16/9;
+  margin-top: 6.5vh;
+  margin-bottom: 0;
+}
+
+.pj-2 img, .pj-4 img{
+  margin-bottom: 2vh;
+}
+
+
+
 .project-section span {
   font-size: 20px;
-  font-family: 'Neue Machina', sans-serif;
+  font-family: "Neue Machina", sans-serif;
   font-weight: bold;
 }
 
@@ -185,12 +208,11 @@ p {
   flex-wrap: wrap;
 }
 
-
 .pj-1 span,
 .pj-2 span,
 .pj-4 span {
   position: relative;
-  top: 50px;
+  top: 3vh;
 }
 
 .pj-3 {
@@ -213,7 +235,7 @@ p {
 .pj-3 span {
   position: relative;
   z-index: 1;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -222,30 +244,33 @@ p {
 .pj-3,
 .pj-4 {
   width: 50%;
-  height: calc(50vh - 40px);
+  height: calc(50vh - 13vh);
 }
 
 .pj-1,
 .pj-4 {
-  background-color: white;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pj-2,
 .pj-3 {
-  background-color: black;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .square-arrow {
   width: 100px;
-  height: 30px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 70px;
+  top: 5vh;
   margin: auto;
 }
 
@@ -253,13 +278,26 @@ p {
   border: 2px solid;
 }
 
+.pj-2 .square-arrow a {
+  color: black;
+  text-decoration: none;
+}
+
+.pj-1 .square-arrow a,
+.pj-4 .square-arrow a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Skills section */
 .skills-body {
-  background-image: url('/src/assets/skills-background-pattern.png');
+  background-image: url("/src/assets/skills-background-pattern.png");
   background-repeat: no-repeat;
   background-size: 35%;
-  background-position: top 50px left;
-  padding-top: 110px;
+  background-position: top 0.5vh left;
+  padding-top: 10vh;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .perspective-grid {
@@ -267,31 +305,40 @@ p {
   justify-content: center;
   align-items: center;
   height: 40vh;
+  margin-top: 0; /* Adjust to remove unnecessary space */
+}
+
+.skills-image {
+  width: 100%;
+  height: auto;
+  max-width: 70vw;
+  margin-top: 10vh;
 }
 
 .skills-square {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 80px;
+  margin: 15vh 5vw;/* Adjust margin to balance spacing */
 }
 
 .skills-square-text {
   border: 2px solid white;
   width: 500px;
-  height: 55px;
-  padding: 5px;
-  margin: 40px 5px;
+  height: 4vh;
+  padding: 1.5vh;
+  margin: 10px 5px;
+    /* Reduce margin to prevent overflow */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .skills-square-text span {
-  font-size: 17px;
+  font-size: 1vw;
   color: white;
   text-align: left;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 /* Interview section */
@@ -300,17 +347,18 @@ p {
   width: 100%;
   height: 100vh;
   padding-top: 110px;
+  box-sizing: border-box;
 }
 
 /* Top Left Corner Image */
 .contact-body::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 25vw;
   height: 25vh;
-  background-image: url('/src/assets/interview-bg-1.png');
+  background-image: url("/src/assets/interview-bg-1.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top left;
@@ -318,13 +366,13 @@ p {
 
 /* Bottom Right Corner Image */
 .contact-body::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: 100px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   width: 20vw;
   height: 20vh;
-  background-image: url('/src/assets/interview-bg-2.png');
+  background-image: url("/src/assets/interview-bg-2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -359,6 +407,7 @@ p {
   padding: 10px;
   margin-right: 10px;
   border: none;
+  border-radius: 5px;
   background-color: #f0f0f0;
   color: #555;
 }
@@ -371,6 +420,7 @@ p {
   width: 100%;
   padding: 10px;
   border: none;
+  border-radius: 5px;
   background-color: #f0f0f0;
   color: #555;
 }
@@ -378,8 +428,9 @@ p {
 .textarea-full {
   width: 100%;
   padding: 10px;
-  height: 150px;
+  height: 23vh;
   border: none;
+  border-radius: 5px;
   overflow-y: scroll;
   background-color: #f0f0f0;
   color: #555;
@@ -396,10 +447,11 @@ p {
   background-color: white;
   color: black;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   display: inline-block;
 }
 
 .submit-button:hover {
-  background-color: #f0f0f0;
+  background-color: #eeeb97;
 }
