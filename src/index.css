@@ -89,6 +89,9 @@ body {
   background-color: black;
 }
 
+.section-5{
+  position: relative;
+}
 .arrowDown {
   position: absolute;
   bottom: 20px;
@@ -375,6 +378,11 @@ body {
     width: 80%;
     margin-top: 4vh;
   }
+
+  .footer-social-icon{
+    display: none;
+  }
+
 }
 /* resize ipad */
 @media (max-width: 1024px) {
@@ -467,4 +475,32 @@ body {
   .contact-body p {
     font-size: 1.5em;
   }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+  box-sizing: border-box;
+  bottom:0;
+  position: absolute;
+}
+
+.footer-social-icon{
+  margin-bottom: -0.9vh;
+}
+
+.footer-social-icon a{
+  text-decoration: none;
+  color: white;
+  margin: 0.5vw;
+}
+
+.footer-social-icon a:hover{
+  color: #eeeb97;
+  
 }

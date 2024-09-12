@@ -11,6 +11,7 @@ import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Footer from "./components/Footer";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -66,6 +67,7 @@ function App() {
             </div>
             <div id="contact" className="section-5" ref={contactRef}>
               <Contact />
+              <Footer />
             </div>
             {isArrowVisible && (
               <div className="arrowDown">

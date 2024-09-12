@@ -18,6 +18,7 @@
   height: 100%;
   overflow: hidden;
   text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 /* First-section content */
@@ -96,6 +97,10 @@
   background-color: white;
   color: black;
   text-decoration: none;
+}
+
+.social-square .social-icon:hover{
+  background-color: #f4c534;
 }
 
 .social-icon span {
@@ -272,6 +277,7 @@ p {
   margin: auto;
 }
 
+
 .pj-2 .square-arrow {
   border: 2px solid;
 }
@@ -285,6 +291,18 @@ p {
 .pj-4 .square-arrow a {
   color: white;
   text-decoration: none;
+}
+
+.pj-1 .square-arrow:hover {
+  background-color: rgba(174, 226, 241, 0.962);
+}
+
+.pj-2 .square-arrow:hover {
+  background-color: #f4c534;
+}
+
+.pj-4 .square-arrow:hover{
+  background-color: grey;
 }
 
 /* Skills section */
