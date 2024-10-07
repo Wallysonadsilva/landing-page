@@ -26,7 +26,7 @@ const Contact = () => {
         "service_7ebz4h9",
         "template_51mwp1r",
         form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
