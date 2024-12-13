@@ -2,7 +2,7 @@ import React from "react";
 import MatrixEffect from "../MatrixEffect";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import pjHikiddo from "../../assets/pj-hikiddo-2.png";
+import pjHikiddo from "../../assets/pj-hikiddo-3.png";
 import pjChatbot from "../../assets/pj-chatbot-2.png";
 import pjQnA from "../../assets/pj-qna.png";
 

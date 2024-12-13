@@ -187,19 +187,18 @@ p {
   box-sizing: border-box;
 }
 
-.pj-1 img, .pj-2 img, .pj-4 img {
+.pj-1, .pj-2, .pj-3, .pj-4 {
   width: 50%;
-  height: auto;
-  aspect-ratio: 16/9;
-  margin-top: 6.5vh;
-  margin-bottom: 0;
+  height: calc(50vh - 13vh);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 3vh 0;
 }
 
-.pj-2 img, .pj-4 img{
-  margin-bottom: 2vh;
-}
-
-.project-section span {
+/* Project title styling */
+.pj-1 span, .pj-2 span, .pj-4 span {
+  margin-top: 2vh;
   font-size: 20px;
   font-family: "Neue Machina", sans-serif;
   font-weight: bold;
@@ -211,13 +210,15 @@ p {
   flex-wrap: wrap;
 }
 
-.pj-1 span,
-.pj-2 span,
-.pj-4 span {
-  position: relative;
-  top: 3vh;
+/* Image styling */
+.pj-1 img, .pj-2 img, .pj-4 img {
+  width: 50%;
+  height: auto;
+  aspect-ratio: 16/9;
+  margin: auto 0;
 }
 
+/* Matrix effect styling */
 .pj-3 {
   position: relative;
   display: flex;
@@ -242,22 +243,11 @@ p {
   text-align: center;
 }
 
-.pj-1,
-.pj-2,
-.pj-3,
-.pj-4 {
-  width: 50%;
-  height: calc(50vh - 13vh);
-}
-
+/* Project backgrounds */
 .pj-1,
 .pj-4 {
   background-color: black;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .pj-2,
@@ -265,21 +255,20 @@ p {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+/* Arrow styling */
 .square-arrow {
   width: 100px;
   border: 2px solid white;
   border-radius: 10px;
+  padding: 8px 0;
+  margin: 2vh auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 5vh;
-  margin: auto;
 }
 
-
 .pj-2 .square-arrow {
-  border: 2px solid;
+  border: 2px solid black;
 }
 
 .pj-2 .square-arrow a {
@@ -293,6 +282,7 @@ p {
   text-decoration: none;
 }
 
+/* Hover effects */
 .pj-1 .square-arrow:hover {
   background-color: rgba(174, 226, 241, 0.962);
 }
@@ -301,9 +291,10 @@ p {
   background-color: #f4c534;
 }
 
-.pj-4 .square-arrow:hover{
+.pj-4 .square-arrow:hover {
   background-color: grey;
 }
+
 
 /* Skills section */
 .skills-body {
