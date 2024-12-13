@@ -215,7 +215,8 @@ p {
   width: 50%;
   height: auto;
   aspect-ratio: 16/9;
-  margin: auto 0;
+  margin: 3vh auto ;
+  display: block;
 }
 
 /* Matrix effect styling */
