@@ -81,7 +81,7 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="/cv/wallyson_alves.pdf"
+            href="/cv/Wallyson_Alves_Junior_Software_Engineer.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMobileMenu}
